@@ -1,0 +1,23 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmavazquez13/readmegenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmavazquez13/readmegenerator/issues"
+  },
+  "homepage": "https://github.com/emmavazquez13/readmegenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "node-fetch": "^2.6.1"
+  }
+}
