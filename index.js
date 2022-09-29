@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const { write } = require("fs");
+const { writeFile } = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -60,7 +60,13 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log(data)
+   writeFile(fileName, data, err => { 
+    if (err) {
+    console.log(err) 
+    return
+    }
+    });
+
 }
 
 // TODO: Create a function to initialize app
@@ -72,7 +78,7 @@ function init() {
     .then((answers) => {
       // Use user feedback for... whatever!!
       const markdown = generateMarkdown(answers);
-      writeToFile("read-me.md", markdown) 
+      return writeToFile("./cool.md", markdown) 
     })
     .catch((error) => {
       if (error.isTtyError) {
