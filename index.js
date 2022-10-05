@@ -23,7 +23,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "What is your usuage information?",
+    message: "What is your usage information?",
   },
   {
     type: "input",
@@ -78,7 +78,7 @@ function init() {
     .then((answers) => {
       // Use user feedback for... whatever!!
       const markdown = generateMarkdown(answers);
-      return writeToFile("./cool.md", markdown) 
+      return writeToFile("./ReadMeSample.md", markdown) 
     })
     .catch((error) => {
       if (error.isTtyError) {
