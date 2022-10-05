@@ -4,6 +4,16 @@ function renderLicenseBadge(license) {
     if(license === 'Apache') {
         return 'https://img.shields.io/badge/License-Apache_2.0-blue.svg'
     }
+    if(license === 'MIT') {
+        return 'https://img.shields.io/badge/License-MIT-yellow.svg'
+    }
+    if(license === 'Boost') {
+        return 'https://img.shields.io/badge/License-Boost_1.0-lightblue.svg'
+    }
+    if(license === '') {
+        return ''
+    }
+
 }
 
 // TODO: Create a function that returns the license link
@@ -11,6 +21,15 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license === 'Apache') {
         return 'https://opensource.org/licenses/Apache-2.0'
+    }
+    if (license === 'MIT') {
+        return 'https://opensource.org/licenses/MIT'
+    }
+    if (license === 'Boost') {
+        return 'https://www.boost.org/LICENSE_1_0.txt'
+    }
+    if (license === '') {
+        return ''
     }
 }
 
